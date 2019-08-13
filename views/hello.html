@@ -1,0 +1,17 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: xushanshan
+ * @Date: 2019-08-13 10:46:56
+ * @LastEditors: xushanshan
+ * @LastEditTime: 2019-08-13 14:37:31
+ -->
+ {% extends 'base.html' %}
+ {% block body %}
+<h1>{{ title }}</h1>
+<form action="/signin" method="post">
+  <p>Name: <input name="name" value="koa"></p>
+  <p>Password: <input name="password" type="password"></p>
+  <p><input type="submit" value="Submit"></p>
+</form>
+{% endblock %}
